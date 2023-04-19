@@ -6,6 +6,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .divisor {
@@ -974,12 +976,16 @@ footer {
   color: #FFF3DB;
 }
 
+footer .botones {
+  justify-content: end;
+}
+
 
 /********************************************************************************
  Estilos Pantalla pequeña 
  ********************************************************************************/
 
- header .navbar-toggler {
+header .navbar-toggler {
   background: #FFF3DB;
   border: none;
   border-radius: 24px;
@@ -991,7 +997,6 @@ footer {
   text-transform: uppercase;
 }
 
-
 @media screen and (max-width: 789px) {
   .header-content, .header-nosotros-content, .header-content-proveedores,
   .header-content-palta, .header-cereza, .header-uva, .header-limon,
@@ -1000,6 +1005,8 @@ footer {
     padding: 40px;
     font-size: 10px;
   }
+
+  
 
   .hero {
     font-size: 40px;
@@ -1091,23 +1098,27 @@ footer {
   }
 
   .footer-content {
-    margin: 0;
-    padding: 40px;
+    margin: 0px;
+    padding: 30px;
     align-items: center;
     text-align: center;
   }
 
   footer .logo {
     order: 1;
+    width: 100%;
   }
 
   footer .botones {
     order: 2;
+    width: 100%;
     margin-bottom: 20px;
+    justify-content: center;
   }
 
   footer .parrafo {
     order: 3;
+    width: 100%;
   }
 }
 
