@@ -245,7 +245,7 @@ header .navbar-toggler:hover {
   font-size: 60px;
   line-height: 68px;
   text-transform: uppercase;
-  color: #FFF3DB;
+  color: #FFFFFF;
   width: 65%;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -259,6 +259,8 @@ header .navbar-toggler:hover {
   width: 148px;
   height: 48px;
   padding: 12px 16px;
+  align-items: start;
+
 }
 
 .boton-principal:hover {
@@ -320,7 +322,6 @@ header .navbar-toggler:hover {
 }
 
 #Productos h1 {
-  padding-left: 40px;
   font-weight: bold;
 }
 
@@ -330,6 +331,7 @@ header .navbar-toggler:hover {
 
 .titulo-produto {
   align-self: center;
+  justify-content: center;
 }
 
 .disponibilidad {
@@ -606,12 +608,14 @@ header .navbar-toggler:hover {
   color: #024125;
   font-weight: 500;
   font-size: 32px;
+  text-align: start;
 }
 
 .fondo-claro .info-noticias p {
   color: #024125;
   font-weight: 400;
   font-size: 16px;
+  text-align: start;
 }
 
 #NoticiasPrincipales {
@@ -746,7 +750,7 @@ header .navbar-toggler:hover {
 }
 
 #NoticiasSingle a {
-  color: red;
+  color: #63011E;
 }
 
 #NoticiasSingle ul li {
@@ -878,6 +882,11 @@ header .navbar-toggler:hover {
 /********************************************************************************
  Estilos Mercados 
  ********************************************************************************/
+#Mercado {
+  align-items: start;
+  text-align: start;
+}
+
 #Mercado .categorias {
   margin-bottom: 120px;
 }
@@ -920,7 +929,7 @@ header .navbar-toggler:hover {
   font-weight: 700;
   color: #024125;
 }
-
+info-noticias
 #Mercado .categorias .flex-fill {
   border: #63011E 2px solid;
   border-radius: 8px;
@@ -980,6 +989,12 @@ footer .botones {
   justify-content: end;
 }
 
+@media screen and (min-width: 789px) {  
+  .ver-todas-movil {
+    display: none;
+  }
+}
+
 
 /********************************************************************************
  Estilos Pantalla pequeña 
@@ -1006,8 +1021,6 @@ header .navbar-toggler {
     font-size: 10px;
   }
 
-  
-
   .hero {
     font-size: 40px;
   }
@@ -1017,13 +1030,33 @@ header .navbar-toggler {
     font-size: 15px;
   }
 
-  #Testimonios, #Contacto p {
+  #Testimonios, #Productores h1, #Productos h1 {
     padding-left: 0px;
     text-align: center;
   }
 
-  #Contacto h1 {
+  .container-noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: right;
+  }
+
+  .ver-todas {
+    display: none;
+  }
+
+  #Nosotros .texto-centrado {
+    text-align: center;
+  }
+
+  #Contacto h1, #Contacto p  {
     text-align: start;
+  }
+
+  #Contacto form {
+    padding-left: 20px;
   }
 
   #Contacto {
@@ -1034,6 +1067,7 @@ header .navbar-toggler {
   .fondo-claro {
     align-items: center;
     text-align: center;
+    padding: 30px;
   }
 
   .texto-nosotros, .texto-mision {
@@ -1058,12 +1092,16 @@ header .navbar-toggler {
   }
 
   .titulo-produto {
-    padding-left: 180px;
-    padding-right: 180px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .packing-imagenes {
     margin: 0 auto;
+  }
+
+  #Nosotros h1, #Nosotros h3, #Nosotros p {
+    text-align: start;
   }
 
   #Noticias .card {

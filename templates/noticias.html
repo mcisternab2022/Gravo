@@ -79,7 +79,7 @@
         </div>
       </nav>
   
-      <h1 class="hero">Noticias</h1>
+      <h1 class="hero d-none d-sm-block">Noticias</h1>
     </div>
     
 
@@ -92,14 +92,17 @@
 
     <!-- Noticias Principales -->
     <section class="fondo-claro">
+      <h2 style="color: #63011E; font-weight: 700;" class="text-uppercase text-center pt-5 d-block d-sm-none">Noticias</h2>
       <div class="container py-5" id="featured-3">
         <div class="row info-noticias">
-          <div class="col-lg-4">
+          <div class="col-lg-4 order-lg-1 order-2">
             <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
             <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
-            <a href="../templates/noticiasSingle.html"><button class="boton-principal mb-3">Leer más</button></a>
+            <div class="text-start">
+              <a href="../templates/noticiasSingle.html"><button class="boton-principal mb-3">Leer más</button></a>
+            </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8 order-lg-2 order-1 pb-3">
             <img class="img-fluid" src="../img/foto-noticias.png" alt="foto-noticias">
           </div>
         </div>
@@ -108,29 +111,30 @@
 
     <section id="NoticiasPrincipales">
       <div class="container px-4 py-5">
-        <div class="row tarjetas d-flex justify-content-center">
-          <div class="card-principal col-lg-2">
-            <img class="img-fluid" src="../img/noticias-principales1.png" alt="" height="700px">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+        <div class="tarjetas d-flex flex-nowrap overflow-hidden justify-content-center px-2 py-2">
+          <div class="d-flex flex-row">
+            <div class="card-principal">
+              <img class="img-fluid" src="../img/noticias-principales1.png" alt="" height="700px">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/noticias-principales2.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/noticias-principales3.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
           </div>
-          <div class="card col-lg-2">
-            <img src="../img/noticias-principales2.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
-            </div>
-          </div>
-          <div class="card col-lg-2">
-            <img src="../img/noticias-principales3.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
-            </div>
-          </div>
-          
         </div>
       </div>
 
@@ -140,69 +144,77 @@
         
     <section id="NoticiasHistoricas" class="fondo-claro">
       <div class="container px-4 py-5">
-        <hr>
-        <div class="buscar d-flex justify-content-end">
+        <hr class="d-none d-sm-block">
+        <div class="buscar d-flex justify-content-end d-none d-sm-block">
           <input class="btn-historico mx-3" type="text" placeholder="Buscar por">
           <select class="btn-historico mx-3" name="categorias" id="" placeholder="Buscar por">
             <option value="rojo">Filtrar por</option>
           </select>
         </div>
-        <h1>Historicas</h1>  
-        <div class="row tarjetas d-flex justify-content-center">
-          <div class="card col-lg-2">
-            <img src="../img/noticias-historicas1.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+        <h1 class="text-start mt-4">Historicas</h1>  
+        <form action="" class="d-block d-sm-none">
+          <input class="btn-historico my-3" type="text" placeholder="Buscar por">
+          <select class="btn-historico" name="categorias" id="" placeholder="Buscar por">
+            <option value="rojo">Filtrar por</option>
+          </select>
+        </form>
+        <div class="tarjetas d-flex flex-nowrap overflow-hidden justify-content-center px-2">
+          <div class="d-flex flex-row"> 
+            <div class="card">
+              <img src="../img/noticias-historicas1.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card col-lg-2">
-            <img src="../img/noticias-historicas2.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas2.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card col-lg-2">
-            <img src="../img/noticias-historicas3.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas3.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card col-lg-2">
-            <img src="../img/noticias-historicas4.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas4.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card ">
-            <img src="../img/noticias-historicas2.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas2.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../img/noticias-historicas4.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas4.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../img/noticias-historicas3.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas3.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="../img/noticias-historicas1.png" alt="">   
-            <div class="fondo-tarjeta">
-              <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
-              <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+            <div class="card">
+              <img src="../img/noticias-historicas1.png" alt="">   
+              <div class="fondo-tarjeta">
+                <h2>Cómo iniciar una granja: agricultores y ganaderos principiantes</h2>
+                <p>¿Nuevo en la agricultura? ¿Quieres aprender a iniciar una granja? El USDA puede ayudar y ofrece asistencia adicional a los agricultores y ganaderos principiantes.</p>
+              </div>
             </div>
           </div>
         </div>
