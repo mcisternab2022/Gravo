@@ -903,6 +903,10 @@ header .navbar-toggler:hover {
 #Mercado .categorias .titulo {
   color: #63011E;
   font-weight: 700;
+  border: #63011E 2px solid;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 0px 10px;
 }
 
 #Mercado h2 {
