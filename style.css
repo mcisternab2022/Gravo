@@ -1136,10 +1136,12 @@ header .navbar-toggler {
   .disponibilidad .grupo-numeros span {
     margin-top: 70px;
     padding: 5px;
+    font-size: 18px;
   }
 
   .disponibilidad .packing span {
     padding: 5px;
+    font-size: 18px;
   }
 
   .datos-contacto {
