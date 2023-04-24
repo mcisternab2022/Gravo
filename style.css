@@ -71,6 +71,7 @@ header .navbar-toggler:hover {
 }
 
 .header-content {
+  width: 100%;
   padding: 40px;
   padding-left: 160px;
 }
@@ -210,6 +211,13 @@ header .navbar-toggler:hover {
   padding-left: 160px;
 }
 
+.fondo-noticias-single {
+  background-image: url('../img/noticias-single-fondo.png');
+	background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
 .header-contacto {
   background-color: #024125;
   padding: 40px;
@@ -220,10 +228,12 @@ header .navbar-toggler:hover {
   font-family: 'Outfit';
   font-size: 18px;
   text-transform: uppercase;
+  width: 100%;
+  height: auto;
 }
 
 .nav-item {
-  padding-left: 35px;
+  padding-left: 25px;
 }
 
 .nav-item .nav-link {
@@ -287,6 +297,8 @@ header .navbar-toggler:hover {
   text-decoration: none;
   cursor: pointer;
   padding: 10px 20px;
+  width: 100px;
+  height: auto;
 }
 
 .boton-es-en:hover {
@@ -571,7 +583,7 @@ header .navbar-toggler:hover {
 #Noticias .card {
   border-radius: 12px 12px 0px 0px;
   background-color: #024125;
-  width: 320px;
+  width: 310px;
   border: none;
   margin-top: 10px;
 }
@@ -637,7 +649,7 @@ header .navbar-toggler:hover {
   border: none;
   padding: 10px;
   height: 400px;
-  width: 500px;
+  width: 470px;
   margin-top: 50px;
 }
 
